@@ -1,38 +1,359 @@
-.App {
+body {
+  direction: rtl;
+}
+
+.container-fluid {
+  padding: 20px 55px;
+  border: #009FE3 solid 1px;
+  border-radius: 30px;
+}
+
+.navbar-brand img {
+  width: 155px;
+  height: 77.23px;
+}
+
+.nav-item a,
+.nav-item .nav-link {
+  font-size: 20px;
+  font-weight: 700px;
+  color: black;
+}
+
+.nav-item .nav-link.active {
+  padding: 10px 36px;
+  background-color: #009FE3;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+
+.form-control {
+  color: #F5F5F5;
+  padding: 11px 73px;
+}
+.modal-content {
+  width: 300px;
+  height: 500px;
+  
+}
+.list-group li {
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.list-group-flush {
+  border-radius: 10px !important;
+}
+
+.list-group li:hover {
+  background-color: #009FE3;
+  color: #FFFFFF;
+}
+
+
+
+
+
+.custom-dropdown .dropdown-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s ease;
+}
+
+.custom-dropdown .dropdown-content.open {
+  max-height: 300px; /* أو حسب ارتفاع العناصر */
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////// */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carousel-inner {
+  border-radius: 20px;
+}
+
+.carousel-item p {
+  font-size: 55px;
+}
+
+.carousel-indicators button {
+  width: 24px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  background-color: #019EE1 !important;
+  border: none;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  width: 60px !important;
+  height: 15px !important;
+  border-radius: 20px;
+}
+
+.main-btn {
+  background-color: #009FE3;
+  color: #F5F5F5;
+  padding: 14px 74px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.features {
+  min-height: 217px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 28px;
+  border: #019EE1 1px solid;
+  border-radius: 40px;
+  margin: 40px 0 !important;
+
+}
+
+.features .everycard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.img-feature  {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features .everycard img {
+  width: 80%;
+}
+
+.title-feature {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc-feature {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-back {
+  height: 380px;
+  position: absolute
+}
+.img-back img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.category-cards,
+.FeaturedProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 28px 0;
+}
+
+.title-section p:nth-child(1) {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title-section p:nth-child(2) {
+  font-size: 24px;
+}
+
+.category-cards .allcards,
+.FeaturedProducts .allcards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-cards .allcards .everycard {
+  width: 390px;
+  border-radius: 20px;
+
+}
+.category-cards .allcards .everycard .card {
+  border: none !important;
+  outline: none !important;
+}
+
+.category-cards .allcards .everycard:nth-child(2) {
+  margin: 0 26px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.banner1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 !important;
+}
+.banner1 .card {
+  outline: none;
+  border: none;
+}
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.card-img-overlay  .card-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.card-img-overlay .btn-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-overlay a {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.FeaturedProducts .allcards .everycard {
+  width: 262px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FeaturedProducts .allcards .everycard:nth-child(2) {
+    margin: 0 49px;
+}
+.FeaturedProducts .allcards .everycard:nth-child(3) {
+    margin: 0 0 0 49px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FeaturedProducts .allcards .everycard .card {
+  padding: 20px;
+  border: 1px #0B8D43 solid;
+  border-radius: 20px;
+  outline: none;
+}
+
+
+
+.FeaturedProducts .allcards .everycard .card .price {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+.FeaturedProducts .allcards .everycard .card .cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FeaturedProducts .allcards .everycard .card .cart a {
+  border-radius: 20px;
+  background-color: #019EE1;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.oursite {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.oursite .card {
+
+  margin: 24px 0;
+  outline: none;
+  border: none;
+}
+.oursite .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.oursite .card .card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+.wehave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wehave .card {
+  margin: 24px 0;
+  background-color: transparent !important;
+}
+
+.wehave .card-header {
+  background-color: transparent !important;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+}
+
+
+.wehave .card-text {
+  text-align: center;
+  font-size: 28px;
+}
+
+.wehave .card-text span {
+  color: #019EE1;
 }
