@@ -5,16 +5,19 @@ function Banner1() {
     return (
         <>
             <div className='banner1 row mx-0 p-0'>
-            <div class="card col-md-10">
-                <img src={banner1} class="card-img" alt="..." />
-                    <div class="card-img-overlay col-md-6">
-                        <p class="card-text">"باقات ورد ساحرة بخصم يصل إلى 40% – فقط هذا الأسبوع!"</p>
-                        <div className='btn-banner'>
-                        <Link className='col-md-7 main-btn'>تسوق الآن</Link>
+                <div className="card col-md-10 col-11">
+                    <img src={banner1} className="card-img col-md-12 p-0" alt="..." />
+                    <div className="card-img-overlay col-md-12 p-0">
+                        <div className='desc-card col-md-12 col-lg-6'>
+                            <p className="card-text">"باقات ورد ساحرة بخصم يصل إلى 40% – فقط هذا الأسبوع!"</p>
+                            <div className="main-btn col-md-6 ">
+                                <Link to="#">تسوق الآن</Link>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
-            </div>
+
         </>
     )
 }

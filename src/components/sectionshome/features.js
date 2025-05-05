@@ -7,7 +7,7 @@ function Features() {
     return (
         <>
             <div className='features row m-0 p-0'>
-                <div className='wrapper col-md-10 d-flex flex-wrap justify-content-center align-items-center position-relative'>
+                <div className='wrapper col-md-10 col-11 d-flex flex-wrap justify-content-center align-items-center position-relative'>
                     <div className='everycard col-lg-4 col-md-5'>
                         <div className='img-feature'>
                             <img src={truck} alt='' />
@@ -45,7 +45,6 @@ function Features() {
                             position: 'absolute',
                             bottom: '0',
                             right: '0',
-                            width: '500px',  
                             zIndex: -1
                         }}
                     />
